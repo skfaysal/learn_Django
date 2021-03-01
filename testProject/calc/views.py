@@ -12,11 +12,12 @@ def add(request):
     if request.method == 'POST':
         num1=request.POST['num1']
         num2=request.POST['num2']
-        print(num1,num2)
         obj=Diseases()
-        obj.num1=num1
-        obj.num2=num2
-        obj.save
+        for i in range(1000):   
+            print(num1,num2)
+            obj.num1=num1
+            obj.num2=num2
+            obj.save()
 
     context={
 
